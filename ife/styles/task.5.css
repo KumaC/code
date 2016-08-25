@@ -1,0 +1,198 @@
+*{
+    margin : 0;
+    padding : 0;
+    
+}
+body{
+    background-color : #DEDEDE;
+    font-family:"微软雅黑"; 
+}
+ol, ul{
+    list-style-type:none;
+}
+.clear{
+    clear:both;
+}
+
+
+/* 头部导航栏 */
+
+nav{
+    width : 100%;
+    height : 60px;
+    background-color : #333333; 
+}
+#home{
+    font-size:0;
+}
+#home img{
+    height:60px;
+    padding:0 30px;
+}
+nav ul{
+    float:right;
+}
+.link{
+    float:left; 
+}
+
+.link a{
+    display:block;
+    line-height:60px;
+    color:#DEDEDE;
+    text-decoration:none;
+    padding:0 10px; 
+}
+.link a:hover{
+    background:#3E3F41;
+}
+
+/* 主要内容 */
+
+main{
+    margin-bottom:20px;
+}
+
+article{
+    margin:20px 450px 0 20px;
+    padding:40px 20px 20px;
+    background:white; 
+    border:1px solid #CDCDCD;
+    box-shadow:1px 1px 1px 1px #838383;
+}
+h3, .author, .publishTime{
+    color:#676767;
+}
+.author{
+    text-decoration:none;
+    margin-right:20px;
+}
+.text{
+    text-indent:2em;
+    line-height:1.75em;
+    margin-bottom:1em;
+}
+.illustration{
+    width:250px;
+}
+.illustration:first-child{
+    float:right;
+}
+.photo{
+    width:120px;
+    border:1px solid #CDCDCD;
+    text-align:center;
+    float:left;
+    margin:10px;
+}
+.sparta{
+    line-height:2em;
+    font-size:14px;
+}
+.spartaPhoto{
+    width:100px;
+    padding:0 10px 10px 10px;
+}
+#table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+    text-align:left;
+    vertical-align:middle;
+    line-height:1.75em;
+    border:1px solid #CDCDCD;
+}
+.tableHead, .tableBody, .tableEnd{
+    border:1px solid #CDCDCD;
+    padding-left:5px;
+}
+.tableHead{
+    color:white;
+    background:#333333;
+}
+.tableEnd{
+    background:#DEDEDE;
+    font-weight:bold;
+}
+
+/* 侧边栏 */
+
+#form{
+    width:368px;
+    background:white;
+    padding:20px;
+    border:1px solid #CDCDCD;
+    box-shadow:1px 1px 1px 1px #838383;
+    position:absolute;
+    top:80px;
+    right:20px;
+}
+#form h2{
+    font-size:16px;
+    line-height:40px;
+    margin-left:15px;
+}
+.sideLine{
+    width:3px;
+    height:40px;
+    background:#DEDEDE;
+    float:left;
+}
+#form form{
+    font-size:14px;
+}
+#form form>div{
+    margin-bottom:1em;
+}
+#form form>.remind{
+    margin-bottom:2em;
+}
+.right{
+    position:absolute;
+    left:145px;
+}
+.right label{
+    margin-right:5px;
+}
+.left{
+    position:absolute;
+    right:280px;
+}
+#form form>#textarea{
+    margin-bottom:11em;
+}
+#form form textarea{
+    width:215px;
+    height:150px;
+    border:1px solid #CDCDCD;
+    border-radius:5px;
+}
+#submit{
+    width:360px;
+    height:3em;
+    border:1px solid #3355DD;
+    background:#3355DD;
+    border-radius:10px;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+}
+#form .inputBox{
+    width:127px;
+    border:1px solid #CDCDCD;
+    border-radius:5px;
+}
+
+/* 版权部分 */
+
+footer{
+    width:100%;
+    height:120px;
+    background:black;
+    margin-top:20px;
+}
+#copyright{
+    padding-top:50px;
+    text-align:center;
+    color:white;
+}

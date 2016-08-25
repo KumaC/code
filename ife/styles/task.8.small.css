@@ -1,0 +1,112 @@
+
+#line1{
+    margin-left:24px;
+}
+#line1 .column1{
+    width:50%;
+    left:-24px;
+}
+#line1 .column2{
+    width:50%;
+    margin-left:-4px;
+    left:0;
+}
+#line1 .column3{
+    display:none;
+}
+/* 第二行 */
+
+#line2{
+    margin-left:2px;
+}
+#line2 .column1{
+    width:100%;
+    margin-left:-2px;
+    left:0;
+}
+#line2 .column2, #line2 .column3{
+    display:none;
+}
+
+
+/* 第三行 */
+
+#line3{
+    margin-left:46px;
+}
+
+
+#line3 .column1{
+    width:25%;
+    left:-46px;
+}
+#line3 .column2{
+    width:50%;
+    left:-26px;
+}
+#line3 .column3{
+    width:25%;
+    margin-left:-6px;
+    left:0;
+}
+#line3 .column4, #line3 .column5{
+    display:none;
+}
+
+/* 第四行 */
+
+#line4{
+    margin-left:46px;
+    height:50px;
+}
+#line4>div{
+    float:left;
+}
+#line4 .column1{
+    width:16.667%;
+    height:50px;
+    background:#eeeeee;
+    border:1px solid #999;
+    position:relative;
+    left:-46px;
+}
+#line4 .column2{
+    width:16.667%;
+    height:50px;
+    background:#eeeeee;
+    border:1px solid #999;
+    position:relative;
+    left:-26px;
+}
+#line4 .column3{
+    width:66.667%;
+    height:50px;
+    background:#eeeeee;
+    border:1px solid #999;
+    margin-left:-6px;
+}
+
+/* 第五行 */
+
+#line5{
+    margin-left:46px;
+}
+#line5>div{
+    float:left;
+}
+#line5 .column1{
+    width:25%;
+    height:50px;
+    background:#eeeeee;
+    border:1px solid #999;
+    position:relative;
+    left:-46px;
+}
+#line5 .column2{
+    width:25%;
+    height:50px;
+    background:#eeeeee;
+    border:1px solid #999;
+    position:relative;
+    left:-26px;
+}

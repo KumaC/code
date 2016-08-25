@@ -1,0 +1,345 @@
+
+/* 初始化 */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* 头部导航栏 */
+
+#header{
+    width:100%;
+    height:57px;
+}
+#header .home{
+    font-size:21px;
+    line-height:57px;
+    font-family:"黑体";
+    color:#393a3a;
+    margin-left:59px;
+    float:left;
+}
+#header .home img{
+    position:relative;
+    top:8px;
+}
+#header .nav{
+    margin-right:59px;
+    float:right;
+}
+#header .nav a{
+    font:lighter 14px "微软雅黑";
+    color:#393a3a;
+    text-decoration:none;
+    line-height:53px;
+    display:block;
+    float:left;
+    padding:0 8px;
+    margin:0 12px;
+}
+#header .nav .pernav:hover{
+    color:#e74f4d;
+    border-bottom:4px solid #e74f4d;
+}
+#header .nav .login{
+    color:#e74f4d;
+}
+#header .nav .login img{
+    position:relative;
+    top:3px;
+    right:3px;
+}
+
+/* 主要部分 区块一 */
+
+#banner1{
+    width:100%;
+    height:750px;
+    background-image:url(../image/task.7/photo1.png);
+    background-size:cover;
+}
+#banner1 .text{
+    float:left;
+    margin-top:250px;
+    margin-left:10%;
+}
+#banner1 .one{
+    font:60px "微软雅黑";
+    margin-top:20px;
+    color:#ffffff;
+    margin-left:-5px;
+}
+#banner1 .two{
+    font:lighter 21px "微软雅黑";
+    color:#fffdfd;
+    margin-top:12px;
+    
+}
+#banner1 .three{
+    font:lighter 30px "微软雅黑";
+    color:#ffffff;
+    text-decoration:none;
+    display:block;
+    width:330px;
+    height:57px;
+    background:#e74f4d;
+    text-align:center;
+    line-height:57px;
+    margin-top:70px;
+}
+
+/* 主要部分 区块二 */
+
+#banner2{
+    width:100%;
+    height:250px;
+    font:14px "黑体";
+    color:#767777;
+}
+#banner2 .container{
+    width:25%;
+    height:250px;
+    float:left;
+    text-align:center;
+}
+#banner2 .fence{
+    width:2px;
+    height:50px;
+    background:#999999;
+    float:left;
+    margin-left:-1px;
+    margin-right:-1px;
+}
+
+#banner2 img{
+    margin-top:45px;
+    margin-bottom:42px;
+}
+#banner2 .text{
+    line-height:19px;
+}
+#banner2 .fence{
+    margin-top:130px;
+    
+}
+
+/* 主要内容  区块三 */
+#banner3{
+    width:100%;
+    height:360px;
+    background:#EDEDED;
+    text-align:center;
+    font:53.59px "黑体";
+    color:#323333;
+}
+#banner3 img{
+    margin-top:90px;
+    margin-bottom:30px;
+}
+#banner4{
+    width:100%;
+    height:340px;
+    background-image:url(../image/task.7/photo3.png);
+    background-size:cover;
+    text-align:center;
+}
+#banner4 .text1{
+    font:lighter 21px "微软雅黑";
+    color:#ffffff;
+    padding-top:52px;
+}
+#banner4 .fence{
+    width:30px;
+    height:2px;
+    background:#ffffff;
+    margin:7px auto 20px auto;
+}
+#banner4 .text2{
+    font:lighter 12px "微软雅黑";
+    color:#ffffff;
+}
+
+/* 主要内容  区块五 */
+
+#banner5{
+    width:100%;
+    height:605px;
+    background:#f7f7f7;
+    
+}
+#banner5 .gallery{
+    display:table;
+    margin-left:auto;
+    margin-right:auto;
+}
+#banner5 .container{
+    width:218px;
+    height:336px;
+    float:left;
+    margin-top:100px;
+    margin-right:40px;
+    text-align:center;
+}
+#banner5 .frame{
+    padding:15px 10px;
+    background:#ffffff;
+    border:1px solid #cccccc;
+}
+#banner5 .text1{
+    font:16px "微软雅黑";
+    line-height:35px;
+}
+#banner5 .text2{
+    font:14px "微软雅黑";
+    color:#898989;
+    margin-bottom:5px;
+}
+#banner5 #shanghai{
+    font:20px "微软雅黑";
+    letter-spacing:30px;
+    position:relative;
+    left:15px;
+}
+
+/* 主要内容  区块六*/
+
+#banner6{
+    width:100%;
+    height:565px;
+}
+#banner6 .container1{
+    width:67%;
+    height:565px;
+    float:left;
+    background-image:url(../image/task.7/photo4.png);
+    background-size:cover;
+    font-family:"微软雅黑";
+    color:#ffffff;
+    text-align:center;
+}
+#banner6 .text1{
+    font-size:49px;
+    margin-top:120px;
+}
+#banner6 .text2{
+    font-size:158px;
+    margin-top:-40px;
+}
+#banner6 .text3{
+    font-size:22px;
+    margin-top:-10px;
+}
+#banner6 .text4{
+    font-size:22px;
+    margin-top:12px;
+}
+#banner6 .container2{
+    width:33%;
+    height:565px;
+    float:left;
+    font-family:"微软雅黑";
+    text-align:center;
+}
+#banner6 .title{
+    letter-spacing:2px;
+    margin-top:160px;
+    margin-bottom:30px;
+}
+#banner6 .mainTitle{
+    font-size:20px;
+    color:black;
+}
+#banner6 .slash{
+}
+#banner6 .childTitle{
+    font-size:20px;
+    color:#e74f4e;
+}
+#banner6 .text{
+    font:12px "宋体";
+    color:#aaaaaa;
+    text-align:left;
+    padding-left:75px;
+    padding-right:75px;
+    line-height:30px;
+    letter-spacing:1px;
+}
+#banner6 .detail{
+    font-size:14px;
+    color:#e74f4e;
+    margin:50px auto 0 auto;
+    line-height:32px;
+    display:block;
+    width:104px;
+    height:32px;
+    border:1px solid #e74f4e;
+}
+/* 主要内容 区块七 */
+
+#banner7{
+    width:100%;
+    height:520px;
+}
+#banner7 .container1{
+    width:33%;
+    height:520px;
+    float:left;
+    background:#e8504f;
+    text-align:center;
+    font:21px "黑体";
+    color:#ffffff;
+}
+#banner7 .container1 .text1{
+    margin-top:170px;
+    margin-bottom:7px;
+}
+#banner7 .container1 .fence{
+    width:30px;
+    height:2px;
+    background:#ffffff;
+    margin:22px auto 26px;
+}
+#banner7 .container1 .detail{
+    display:block;
+    width:167px;
+    height:40px;
+    border:1px solid #ffffff;
+    line-height:40px;
+    margin:0 auto;
+}
+#banner7 .container2{
+    width:34%;
+    height:520px;
+    float:left;
+    background:#ffffff;
+    text-align:center;
+    font:21px "黑体";
+    color:black;
+}
+#banner7 .container2 .text1{
+    margin-top:170px;
+    margin-bottom:7px;
+}
+#banner7 .container2 .fence{
+    width:30px;
+    height:2px;
+    background:#acacac;
+    margin:22px auto 26px;
+}
+#banner7 .container2 .detail{
+    display:block;
+    width:167px;
+    height:40px;
+    border:1px solid #e8504f;
+    line-height:40px;
+    margin:0 auto;
+    color:#e8504f;
+}
+#banner7 .container3{
+    float:left;
+    width:33%;
+    height:520px;
+    background-image:url(../image/task.7/photo5.png);
+    background-size:cover;
+}

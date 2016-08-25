@@ -1,0 +1,87 @@
+ï»¿*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"å¾®è½¯é›…é»‘";
+}
+/* #outside{
+    height:100%;
+    width:100%;
+    margin-top:20px;
+    background:green;
+    float:left;
+} */
+.teamInfo{
+    float:left;
+    
+    border:1px solid #999;
+    background:#eee;
+    margin:20px 20px 20px 20px;
+    padding:20px;
+}
+
+
+/* ÈýÀ¸Ê½²¼¾Ö */
+
+.mainCon{
+    float:left;
+    width:100%;
+    height:100%;
+    
+}
+.mainCon .teamIntro{
+    margin:0px 146px 0px 221px;
+    padding:20px;
+    background:white;
+    border:1px solid #999;
+    line-height:1.5em;
+    text-indent:2em;
+    min-width:500px;
+}
+.teamOutline{
+    width:200px;
+    border:1px solid #999;
+    background:white;
+    float:left;
+    margin-left:-100%;
+    
+}
+.logoWall{
+    width:120px;
+    border:1px solid #999;;
+    background:white;
+    float:left;
+    margin-left:-125px;
+    padding-top:20px;
+}
+
+/* ÍÅ¶Ó¸ÅÒªÏ¸½Ú*/
+
+.teamLogo{
+    width:80px;
+    height:80px;
+    float:left;
+    margin:20px 0 20px 20px;
+    
+    box-shadow:-1px 1px 2px 1px #848484;
+}
+.teamName{
+    width:68px;
+    line-height:1.5em;
+    margin:20px 15px;
+    text-shadow:-1px 1px 1px #848484;
+    text-align:center;
+    float:left;   
+}
+
+/* ÍÅ¶Ó³ÉÔ±Ï¸½Ú */
+
+
+.perLogo{
+    width:80px;
+    height:80px;
+    margin:0px 19px 19px 19px;
+    border:1px solid #999;
+    box-shadow:-1px 1px 2px 1px #848484;
+}
