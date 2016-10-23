@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang = "zh-CN">
+    <head>
+        <title>task18</title>
+        <meta charset = "UTF-8">
+        <style>
+            #queue{
+                display:flex;
+                display:-webkit-flex;
+                flex-wrap:wrap;
+                justify-content:flex-start;
+                margin-top:2px;
+            }
+            .items{
+                line-height:40px;
+                margin-right:2px;
+                padding:0 10px;
+                background-color:red;
+                color:#ffffff;
+                font-family:"微软雅黑";
+            }
+        </style>
+    </head>
+    <body>
+        <textarea id="dataIn"></textarea>
+        <input class = "change-btn" type = "button" value = "左侧入"></input>
+        <input class = "change-btn" type = "button" value = "右侧入"></input>
+        <input class = "change-btn" type = "button" value = "左侧出"></input>
+        <input class = "change-btn" type = "button" value = "右侧出"></input>
+        <input id = "selText" type = "text">
+        <button id = "select">查询</button>
+        <div id = "queue">
+        </div>
+    </body>
+    <script>
+        function $(mark){
+            if(/^#[\$\_\w]+/.test(mark)){
+                return document.getElementById(mark.substring(1));
+            }
+            if(/^\.[\$\_\w]+/.test(mark)){
+                return document.getElementsByClassName(mark.substring(1));
+            }
+            if(/^\w+/.test(mark)){
+                return document.getElementsByTagName(mark);
+            }
+            if(/^\-\w+/.test(mark)){
+                return document.createElement(mark.substring(1));
+            }
+        }
+        
+        function init(){
+            var changeBtn = $('.change-btn');
+            var queue = $('#queue');
+            //为输入与取出按钮绑定函数
+            for(let key in changeBtn){
+                if(changeBtn.hasOwnProperty(key)){
+                    changeBtn[key].addEventListener('click', function(event){
+                    change.call(null, event.target)
+                    })
+                }
+            }
+            //为数列绑定删除函数
+            queue.addEventListener('click',function(event){
+                if(event.target.className.toLowerCase() === 'items'){
+                    itemsDel.call(null, event.target)
+                }
+            } )
+            //为查询按钮绑定函数
+            var select = $('#select');
+            select.addEventListener('click',function(event){
+                sel.call(null)
+            })
+        }
+        function change(tar){
+            //有效输入判断
+            var queue = $('#queue');
+            var dataIn = $('#dataIn');
+            var data = dataIn.value.trim();
+            var dataArr = data.split(/[\,\，\s\、]/)
+            if(!/[\w\u4e00-\u9fa5\n\t\,\，\、\s]+/.test(data)){
+                alert('输入内容只允许包括英文、数字和汉字');
+                return;
+            }
+            if(tar.value === "左侧入"){
+                dataArr.forEach(function(element){
+                    item = $('-div');
+                    item.innerText = element;
+                    item.className = 'items';
+                    queue.insertBefore(item, queue.children[0]);
+                })
+                return;
+            }
+            if(tar.value === "右侧入"){
+                dataArr.forEach(function(element){
+                    item = $('-div');
+                    item.innerText = element;
+                    item.className = 'items';
+                    queue.appendChild(item);
+                })
+                return;
+            }
+            if(tar.value === "左侧出"){
+                alert(queue.children[0].innerText);
+                queue.removeChild(queue.children[0]);
+                return;
+            }
+            if(tar.value === "右侧出"){
+                alert(queue.lastChild.innerText);
+                queue.removeChild(queue.lastChild);
+                return;
+            }
+        }
+        function itemsDel(tar){
+            var queue = $('#queue');
+            queue.removeChild(tar);
+        }
+        function sel(){
+            var selText = $('#selText').value;
+            var queue = $('#queue');
+            for(let i in queue.children){
+                if(queue.children.hasOwnProperty(i)){
+                    if(queue.children[i].innerText.indexOf(selText)!==-1){
+                        queue.children[i].style.color = 'green';
+                    }else{
+                        queue.children[i].style.color = '#ffffff';
+                    }
+                }
+            }
+        }
+        init();
+    </script>
+</html>
